@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>
+            Introdução JavaScript
+        </title>
+    </head>
+        
+    <body>
+
+        <script>
+            function retornaGenero (sexo){
+
+            if (sexo == 'M'){//(Verifica se os valores são iguais)  (=== verifica tipagem da variavel)
+                return 'Masculino;'
+            }
+            else if(sexo == 'F'){
+                return 'Feminino';
+            }
+            else{
+                return 'Outro';
+            }
+
+            switch (sexo){
+                case 'M':
+                    return 'Masculino';
+                case 'F':
+                    return 'Feminino';
+                default: 
+                    return 'Outro';
+            }
+
+        };
+        </script>
+    </body>
+
+</html>

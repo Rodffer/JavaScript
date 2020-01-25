@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>
+            Manipulando a DOM
+        </title>
+    </head>
+        
+    <body>
+        <div id="app">
+
+            <input id="nome"/>
+            
+        </div>
+
+
+        <script>
+        var linkElement = document.createElement('a');
+        linkElement.setAttribute('href', 'http://www.google.com.br');
+        linkElement.setAttribute('title', 'Pesquisar no Google');
+
+        var textElement = document.createTextNode('Google');
+        linkElement.appendChild(textElement);
+
+        var containerElement = document.querySelector('#app');
+        containerElement.appendChild(linkElement);
+
+        var inputElement = document.querySelector('#nome');
+        containerElement.removeChild(inputElement);
+
+        </script>
+    </body>
+
+</html>

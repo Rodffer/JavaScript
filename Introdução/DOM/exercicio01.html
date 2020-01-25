@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>
+            Exercicios
+        </title>
+    </head>
+        
+    <body>
+        <button onclick="criaCaixa()">Criar Caixa</button>
+        <div id="app">
+
+        </div>
+
+        <script>
+        function criarCaixa(){
+
+            var boxElement = document.createElement('div');
+            boxElement.setAttribute('class', 'box');
+            boxElement.setAttribute('style', 'width = 100');
+            boxElement.setAttribute('style', 'height = 100');
+            boxElement.setAttribute('style', 'position: relative');
+            boxElement.setAttribute('style', 'float: left');
+            boxElement.setAttribute('style', 'backgroundColor:#f00');
+
+            var criarElemento = document.querySelector('#app');
+            criarElemento.appendChild(boxElement);
+
+
+        }
+
+        </script>
+    </body>
+
+</html>
